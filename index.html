@@ -1,0 +1,22 @@
+
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Deno and React </title>
+<script  src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script  src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+<script type="module" src="app.bundle.js"></script>
+<meta charset="utf-8">
+</head>
+<body>
+  <h1>Deno land</h1>
+  <h3>is such a quiet place...</h3>
+  <div id="root"></div>
+  <script type="module">
+    console.log("In script html -  before import: ");
+    import renderApp from "./app.bundle.js";
+    renderApp(root);
+
+  </script>
+</body>
+</html> 
