@@ -1,4 +1,3 @@
-
 export type DenoConfig = {
   stroke: string;
   fill: string;
@@ -6,14 +5,14 @@ export type DenoConfig = {
   height: number;
 };
 
-export type InputType = string|number
+export type ValueType = string | number;
 
-export interface Prop<T extends InputType> {
+export interface Prop<T extends ValueType> {
   name: string;
   inputType: string;
   val: T;
   onPropUpdated: (val: T) => void;
-  range? : Range
+  range?: Range;
 }
 
 export interface Range {

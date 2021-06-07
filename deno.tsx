@@ -1,18 +1,34 @@
-import { React  } from "./deps.ts";
-import  {DenoConfig } from "./types.ts";
+import { React } from "./deps.ts";
+import { DenoConfig } from "./types.ts";
 
 export const Deno = (dc: DenoConfig) => {
   return (
-    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-     width={dc.width}height={dc.height} viewBox="0 0 1280.000000 921.000000"
-     preserveAspectRatio="xMidYMid meet">
-    <metadata>
-    Created by potrace 1.15, written by Peter Selinger 2001-2017
-    </metadata>
-      <g 
-        transform="translate(0.000000,921.000000) scale(0.100000,-0.100000)"
-    fill={dc.fill} stroke={dc.stroke}>
-    <path d="M1081 9195 c-96 -22 -158 -43 -244 -86 -105 -52 -151 -85 -220 -158
+    <div className="border mx-auto">
+      <DenoBase {...dc}/>
+    </div>
+  );
+}
+const DenoBase = (dc: DenoConfig) => {
+  return (
+    <svg
+      version="1.0"
+      xmlns="http://www.w3.org/2000/svg"
+      width={dc.width}
+      height={dc.height}
+      viewBox="-25 -25 1305.000000 946.000000"
+      preserveAspectRatio="xMidYMid meet"
+    >
+      <metadata>
+        Created by potrace 1.15, written by Peter Selinger 2001-2017
+      </metadata>
+      <g
+        transform="translate(0.000000,899.000000) scale(0.100000,-0.100000)"
+        fill={dc.fill}
+        stroke={dc.stroke}
+        strokeWidth="100"
+      >
+        <path
+          d="M1081 9195 c-96 -22 -158 -43 -244 -86 -105 -52 -151 -85 -220 -158
     -68 -72 -103 -142 -112 -231 -14 -125 -52 -161 -232 -220 -199 -65 -232 -93
     -243 -213 -4 -40 -13 -100 -20 -135 -15 -79 -7 -137 29 -194 37 -57 109 -105
     265 -173 137 -59 178 -83 245 -139 102 -85 162 -98 315 -67 121 25 149 20 176
@@ -34,9 +50,9 @@ export const Deno = (dc: DenoConfig) => {
     -255 645 -275 791 -529 1287 -853 1668 -492 577 -1084 830 -1832 783 -387 -25
     -714 -94 -1280 -272 -277 -87 -458 -56 -634 107 -158 146 -276 386 -366 744
     -121 482 -180 916 -205 1520 -28 687 -39 804 -89 1002 -90 355 -263 560 -566
-    665 -88 31 -214 39 -304 18z"/>
-    </g>
-</svg>
+    665 -88 31 -214 39 -304 18z"
+        />
+      </g>
+    </svg>
   );
 };
-

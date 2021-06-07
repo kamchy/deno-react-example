@@ -1,5 +1,5 @@
-import { React  } from "./deps.ts";
-import  {DenoConfig } from "./types.ts";
+import { React } from "./deps.ts";
+import { DenoConfig } from "./types.ts";
 
 export const Rect = (dc: DenoConfig) => {
   return (
@@ -18,5 +18,3 @@ export const Rect = (dc: DenoConfig) => {
     </svg>
   );
 };
-
-
